@@ -1,16 +1,18 @@
-import './App.css'
+import './App.css';
+import {Routes, Route} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './views/Home';
 
-function App() {
 
+const App = () => {
   return (
     <>
-      <div className="App">
-        <header className="App-header">
-          <h1>My Portfolio</h1>
-        </header>
-      </div>
+      {/* <Navbar /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
