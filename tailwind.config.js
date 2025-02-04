@@ -6,6 +6,9 @@ export default {
       colors: {
         customBlue: '#B9D9EB', // light blue
       },
+      fontFamily: {
+        'source': ['Source Code Pro', 'monospace'],
+      },
     },
   },
   plugins: [],
