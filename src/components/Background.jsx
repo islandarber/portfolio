@@ -40,7 +40,7 @@ const Background = () => {
           color: "#B9D9EB",
           distance: 150,
           enable: true,
-          opacity: 0.5,
+          opacity: 1,
           width: 1,
         },
         move: {
