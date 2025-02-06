@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Home = () => {
   return (
     <div
-      className="flex flex-col justify-center items-center h-screen p-6 gap-2 text-white font-source"
+      className="flex flex-col justify-center items-center min-h-screen p-6 gap-2 text-white font-source"
       style={{ position: "relative", zIndex: 1 }}
     >
       <Background />

@@ -6,7 +6,7 @@ import techneVideo from '../assets/projects/techneswapvid.mp4';
 import notesKiteVideo from '../assets/projects/noteskite.mp4';
 import toDoVideo from '../assets/projects/todlist.mp4';
 
-export const Projects = [ 
+export const ProjectList = [ 
   {
     title: 'TechneSwap', 
     description: 'A skill-swapping platform built with React, Node.js, Express, and MongoDB, offering seamless skill exchange and filtering.', 
