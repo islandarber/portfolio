@@ -28,8 +28,7 @@ export const ProjectList = [
     description: 'A to-do list app built with React to help users efficiently create and manage their tasks.', 
     image: toDoPhoto, 
     video: toDoVideo, 
-    gitHublink: 'https://github.com/islandarber/toDoListCCReact', 
-    liveLink: 'N/A'
+    gitHublink: {front: 'https://github.com/islandarber/toDoListCCReact'}
   },
   {
     title: 'Nasos Portfolio', 
