@@ -4,7 +4,6 @@ import { ProjectList } from '../components/ProjectList';
 const Projects = () => {
     return (
         <div className="flex flex-col justify-center items-center min-h-screen gap-2 text-white font-source" style={{ position: "relative", zIndex: 1 }}>
-            <Navbar />
             <div className="flex flex-col justify-center items-center gap-2">
                 {ProjectList.map((project, index) => (
                     <div key={index} className="flex flex-col justify-center items-center gap-2">

@@ -1,6 +1,39 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
 .navbar {
   position: sticky;
   top: 0;
   overflow: hidden;
   background-color: #333;
+}
+
+.nav-link:target {
+  text-decoration: underline;
+  color: #fbbf24; 
+}
+
+.skill-logo {
+  width: 50px; /* Set the desired width */
+  height: 50px; /* Set the desired height */
+  object-fit: cover; /* Ensure the image fills the specified dimensions */
+  padding: 3px; /* Set the desired padding */
+}
+
+.skill-container {
+  width: 100px; /* Set the desired width */
+  height: 80px; /* Set the desired height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffffff59; /* Set the desired border width and color */
+  border-radius: 20%; /* Make the border a circle */
+  gap: 5px; /* Set the desired gap between the image and text */
+}
+
+.skill-set p{
+  font-size: 10px;
 }

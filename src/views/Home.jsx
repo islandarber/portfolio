@@ -9,7 +9,7 @@ const Home = () => {
       className="flex flex-col justify-center items-center min-h-screen p-6 gap-2 text-white font-source"
       style={{ position: "relative", zIndex: 1 }}
     >
-      <Background />
+      {/* <Background /> */}
 
       {/* Image coming from top (downwards) */}
       <motion.div
