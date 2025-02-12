@@ -44,10 +44,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container max-w-md min-h-screen mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold text-center mb-8 text-white">Contact</h2>
-      <p>Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
-      <form onSubmit={handleSubmit} className="space-y-6 border border-gray-300 rounded-lg p-6">
+    <div className="contact-container max-w-md min-h-screen mx-auto px-4 py-8 text-white">
+      <h2 className="text-3xl font-bold text-center mb-8 ">Contact</h2>
+      <p className='text-center mb-6'>Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
+      <form onSubmit={handleSubmit} className="space-y-6 p-6">
         {/* Name Field */}
         <div>
           <label htmlFor="from_name" className="block text-white mb-2">Name</label>
@@ -58,7 +58,7 @@ const Contact = () => {
             value={formData.from_name}
             onChange={handleChange}
             placeholder="Enter your name"
-            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+            className="w-full p-1 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
             required
           />
         </div>
@@ -73,7 +73,7 @@ const Contact = () => {
             value={formData.from_email}
             onChange={handleChange}
             placeholder="Enter your email"
-            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+            className="w-full p-1 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
             required
           />
         </div>
@@ -88,7 +88,7 @@ const Contact = () => {
             onChange={handleChange}
             placeholder="Enter your message"
             className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
-            rows="3"
+            rows="2"
             required
           ></textarea>
         </div>
@@ -97,7 +97,7 @@ const Contact = () => {
         <div className="text-center">
           <button
             type="submit"
-            className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none"
+            className="px-2 py-1 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none"
           >
             Submit
           </button>
