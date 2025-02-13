@@ -16,7 +16,7 @@ const About = () => {
     const skills = [ "Javascript", "React", "Node.js", "Express", "MongoDB", "TypeScript", "HTML", "CSS", "Git" ];
 
     return (
-        <section id="about" className='min-h-screen font-source pt-20'>
+        <section id="about" className='min-h-screen font-source pt-10'>
           <div className='flex flex-col justify-center items-center gap-4 mt-8'>
               <h1 className='text-4xl md:text-7xl text-white text-center'>About me</h1>
               <hr className="w-3/4 md:w-1/2 border-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent" />
