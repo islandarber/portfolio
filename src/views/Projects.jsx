@@ -1,9 +1,12 @@
 import { ProjectList } from '../components/ProjectList'; 
-import github from '../assets/githubLogo.png';
+import github from '.../public/githubLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
+
+
+  
   return (
     <section id="projects" className="flex flex-col gap-24 p-8 text-white font-source">
       <div className='flex flex-col justify-center items-center gap-2'>
@@ -28,13 +31,13 @@ const Projects = () => {
                 playsInline
                 className="w-full rounded-lg shadow-lg"
               ></video>
-            ) : (
+            ) : project.image ? ( 
               <img
-                src={project.image} // Make sure project.image exists in your data
+                src={project.image} 
                 alt={`${project.name} thumbnail`}
                 className="w-full rounded-lg shadow-lg"
               />
-            )}
+            ) : null}
           </div>
 
           {/* Project Details */}
