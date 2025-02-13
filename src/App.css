@@ -14,17 +14,16 @@ body {
   cursor: pointer;
 }
 
-
 .skill-logo {
-  width: 70px; /* Set the desired width */
-  height: 70px; /* Set the desired height */
+  width: 50px; /* Set the desired width for mobile */
+  height: 50px; /* Set the desired height for mobile */
   object-fit: cover; /* Ensure the image fills the specified dimensions */
   padding: 3px; /* Set the desired padding */
 }
 
 .skill-container {
-  width: 150px; /* Set the desired width */
-  height: 120px; /* Set the desired height */
+  width: 100px; /* Set the desired width for mobile */
+  height: 100px; /* Set the desired height for mobile */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,29 +33,25 @@ body {
   gap: 5px; /* Set the desired gap between the image and text */
 }
 
-.skill-set p{
-  font-size: 10px;
+.skill-set p {
+  font-size: 10px; /* Set the desired font size for mobile */
 }
 
 .skill-container:hover {
   transform: scale(1.05);
 }
 
-.skill-set p {
-  font-size: 12px;
-}
-
 @media (min-width: 768px) {
   .skill-logo {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
   .skill-container {
-    width: 140px;
-    height: 120px;
+    width: 120px;
+    height: 100px;
   }
   .skill-set p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
