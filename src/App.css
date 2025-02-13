@@ -16,15 +16,15 @@ body {
 
 
 .skill-logo {
-  width: 100px; /* Set the desired width */
-  height: 100px; /* Set the desired height */
+  width: 70px; /* Set the desired width */
+  height: 70px; /* Set the desired height */
   object-fit: cover; /* Ensure the image fills the specified dimensions */
   padding: 3px; /* Set the desired padding */
 }
 
 .skill-container {
-  width: 200px; /* Set the desired width */
-  height: 160px; /* Set the desired height */
+  width: 150px; /* Set the desired width */
+  height: 120px; /* Set the desired height */
   display: flex;
   flex-direction: column;
   justify-content: center;
