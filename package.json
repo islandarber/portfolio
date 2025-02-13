@@ -23,7 +23,6 @@
     "react-icons": "^5.4.0",
     "react-router-dom": "^6.27.0",
     "react-scroll": "^1.9.2",
-    "react-tsparticles": "^2.12.2",
     "three-mesh-bvh": "^0.8.2",
     "tsparticles": "^3.8.0"
   },
