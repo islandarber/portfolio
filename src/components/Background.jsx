@@ -18,6 +18,7 @@ const Background = () => {
 
   const options = useMemo(
     () => ({
+      fullScreen: { enable: false },
       background: {
         color: {
           value: "#000000",
@@ -66,7 +67,7 @@ const Background = () => {
   return (
     <div
       style={{
-        position: "fixed",
+        position: "absolute",
         top: 0,
         left: 0,
         width: "100%",

@@ -10,10 +10,10 @@ body {
   background-color: #333;
 }
 
-.nav-link:target {
-  text-decoration: underline;
-  color: #fbbf24; 
+.navbar li {
+  cursor: pointer;
 }
+
 
 .skill-logo {
   width: 50px; /* Set the desired width */

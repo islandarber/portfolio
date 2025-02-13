@@ -44,9 +44,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container max-w-md min-h-screen mx-auto px-4 py-8 text-white">
-      <h2 className="text-3xl font-bold text-center mb-8 ">Contact</h2>
-      <p className='text-center mb-6'>Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
+    <section id="contact" className="contact-container max-w-md min-h-screen mx-auto px-4 py-8 text-white">
+      <div className='flex flex-col justify-center items-center gap-2'>
+              <h1 className='mt-8 text-6xl text-white text-center'>Contact</h1>
+              <hr className="w-1/2 border-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent" />
+          </div>
+      <p className='text-center my-6'>Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
       <form onSubmit={handleSubmit} className="space-y-6 p-6">
         {/* Name Field */}
         <div>
@@ -58,7 +61,7 @@ const Contact = () => {
             value={formData.from_name}
             onChange={handleChange}
             placeholder="Enter your name"
-            className="w-full p-1 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+            className="w-full p-1 border border-gray-300 focus:outline-none focus:border-blue-500"
             required
           />
         </div>
@@ -73,7 +76,7 @@ const Contact = () => {
             value={formData.from_email}
             onChange={handleChange}
             placeholder="Enter your email"
-            className="w-full p-1 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+            className="w-full p-1 border border-gray-300 focus:outline-none focus:border-blue-500"
             required
           />
         </div>
@@ -87,7 +90,7 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             placeholder="Enter your message"
-            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+            className="w-full p-3 border border-gray-300 focus:outline-none focus:border-blue-500"
             rows="2"
             required
           ></textarea>
@@ -97,7 +100,7 @@ const Contact = () => {
         <div className="text-center">
           <button
             type="submit"
-            className="px-2 py-1 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none"
+            className="px-2 py-1 bg-gray-700 text-white font-semibold hover:bg-gray-600 focus:outline-none"
           >
             Submit
           </button>
@@ -106,7 +109,7 @@ const Contact = () => {
         {/* Status Message */}
         {statusMessage && <p className="text-center text-white mt-4">{statusMessage}</p>}
       </form>
-    </div>
+    </section>
   );
 };
 

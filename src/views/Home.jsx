@@ -5,11 +5,12 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div
+    <section
+      id="home"
       className="flex flex-col justify-center items-center min-h-screen p-6 gap-2 text-white font-source"
       style={{ position: "relative", zIndex: 1 }}
     >
-      {/* <Background /> */}
+      <Background />
 
       {/* Image coming from top (downwards) */}
       <motion.div
@@ -58,11 +59,14 @@ const Home = () => {
           }}
           whileTap={{ scale: 0.95 }} // Slightly shrinks on tap/click
           transition={{ duration: 0.3 }}
+          onClick={() => {
+            document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+          }}
         >
           View my work ↓
         </motion.button>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

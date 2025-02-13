@@ -5,8 +5,11 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
   return (
-    <div className="flex flex-col gap-24 p-8 text-white font-source">
-      <h1 className="text-6xl text-center">Projects</h1>
+    <section id="projects" className="flex flex-col gap-24 p-8 text-white font-source">
+      <div className='flex flex-col justify-center items-center gap-2'>
+              <h1 className='mt-8 text-6xl text-white text-center'>Projects</h1>
+              <hr className="w-1/2 border-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent" />
+          </div>
       {ProjectList.map((project, index) => (
         <div
           key={index}
@@ -80,7 +83,7 @@ const Projects = () => {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 
