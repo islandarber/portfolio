@@ -37,3 +37,39 @@ body {
 .skill-set p{
   font-size: 10px;
 }
+
+.skill-container:hover {
+  transform: scale(1.05);
+}
+
+.skill-set p {
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .skill-logo {
+    width: 80px;
+    height: 80px;
+  }
+  .skill-container {
+    width: 140px;
+    height: 120px;
+  }
+  .skill-set p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skill-logo {
+    width: 100px;
+    height: 100px;
+  }
+  .skill-container {
+    width: 160px;
+    height: 140px;
+  }
+  .skill-set p {
+    font-size: 16px;
+  }
+}
