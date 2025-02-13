@@ -1,5 +1,4 @@
-import { ProjectList } from '../components/ProjectList'; 
-import github from '.../public/githubLogo.png';
+import { ProjectList } from '../components/ProjectList';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
@@ -10,7 +9,7 @@ const Projects = () => {
   return (
     <section id="projects" className="flex flex-col gap-24 p-8 text-white font-source">
       <div className='flex flex-col justify-center items-center gap-2'>
-              <h1 className='mt-8 text-6xl text-white text-center'>Projects</h1>
+              <h1 className='mt-8 text-8xl text-white text-center'>Projects</h1>
               <hr className="w-1/2 border-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent" />
           </div>
       {ProjectList.map((project, index) => (
@@ -53,7 +52,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-blue-600 hover:underline"
               >
-                <img src={github} alt="Frontend GitHub" className="w-[30px]" />
+                <img src="/githubLogo.png" alt="GitHub Logo" className="w-[30px]" />
                 <span>Frontend</span>
               </a>
             )}
@@ -66,7 +65,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-green-600 hover:underline"
               >
-                <img src={github} alt="Backend GitHub" className="w-[30px]" />
+                <img src="/githubLogo.png" alt="GitHub Logo" className="w-[30px]" />
                 <span>Backend</span>
               </a>
             )}

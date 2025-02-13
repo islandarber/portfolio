@@ -1,4 +1,3 @@
-import github from '.../public/githubLogo.png';
 import linkedin from '../assets/linkedIn.png';
 import arrow from '../assets/arrowDown.png';  
 
@@ -9,7 +8,7 @@ const Footer = () => {
        <div className="container mx-auto">
         <div className="flex justify-center space-x-4 mb-2">
           <a href="https://github.com/islandarber" target="_blank" rel="noopener noreferrer">
-            <img src={github} alt="github" className="w-8 h-8 transition-transform duration-300 hover:scale-110" />
+            <img src="/githubLogo.png" alt="GitHub Logo" className="w-8 h-8 transition-transform duration-300 hover:scale-110" />
           </a>
           <a href="https://www.linkedin.com/in/christina-vekri/" target="_blank" rel="noopener noreferrer">
             <img src={linkedin} alt="linkedin" className="w-8 h-8 transition-transform duration-300 hover:scale-110" />
