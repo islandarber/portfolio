@@ -1,4 +1,4 @@
-import github from '../assets/githubLogo.png';
+import github from '.../public/githubLogo.png';
 import linkedin from '../assets/linkedIn.png';
 import arrow from '../assets/arrowDown.png';  
 
