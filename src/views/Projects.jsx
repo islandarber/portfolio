@@ -5,7 +5,7 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 const Projects = () => {
   return (
     <section id="projects" className="flex flex-col gap-16 px-4 md:px-8 py-12 pt-16 text-white font-source">
-      <div className="text-center mb-8">
+      <div className="flex flex-col justify-center items-center gap-4 mt-8">
         <h1 className="text-4xl md:text-7xl font-bold">Projects</h1>
         <hr className="w-3/4 md:w-1/2 border-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent" />
       </div>
