@@ -24,7 +24,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="flex flex-col items-center gap-6 px-4 sm:px-6 md:px-8 py-10 text-white font-source">
-      <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold">Contact</h1>
+      <h1 className="text-3xl sm:text-4xl md:text-7xl">Contact</h1>
       <hr className="w-3/4 md:w-1/2 border-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent" />
       <p className="text-center text-sm sm:text-base md:text-lg mb-4">Have a question or want to work together? Leave your details below.</p>
 
