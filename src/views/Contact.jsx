@@ -23,7 +23,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="flex flex-col items-center gap-6 px-4 sm:px-6 md:px-8 py-10 text-white min-h-screen font-source">
+    <section id="contact" className="flex flex-col items-center gap-6 px-4 sm:px-6 md:px-8 py-10 text-white font-source">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">Contact</h1>
       <hr className="w-2/3 sm:w-1/2 mx-auto border-t border-gray-400" />
       <p className="text-center text-sm sm:text-base md:text-lg mb-4">Have a question or want to work together? Leave your details below.</p>
