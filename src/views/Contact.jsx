@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ from_name: '', from_email: '', message: '' });
   const [statusMessage, setStatusMessage] = useState('');
+
+  // Initialize emailjs with the public key (only once)
+  useEffect(() => {
+    emailjs.init(process.env.VITE_EMAILJS_PUBLIC_KEY);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -15,8 +20,7 @@ const Contact = () => {
     emailjs.sendForm(
       process.env.VITE_EMAILJS_SERVICE_ID,
       process.env.VITE_EMAILJS_TEMPLATE_ID,
-      e.target,
-      process.env.VITE_EMAILJS_PUBLIC_KEY
+      e.target
     )
     .then(() => setStatusMessage('Your message has been sent!'))
     .catch(() => setStatusMessage('Sorry, something went wrong. Please try again.'));
