@@ -16,7 +16,7 @@ const Contact = () => {
       process.env.VITE_EMAILJS_SERVICE_ID,
       process.env.VITE_EMAILJS_TEMPLATE_ID,
       e.target,
-      process.env.VITE_EMAILJS_USER_ID
+      process.env.VITE_EMAILJS_PUBLIC_KEY
     )
     .then(() => setStatusMessage('Your message has been sent!'))
     .catch(() => setStatusMessage('Sorry, something went wrong. Please try again.'));
