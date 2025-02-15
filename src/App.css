@@ -6,19 +6,25 @@ body {
 .navbar {
   position: sticky;
   top: 0;
-  overflow: hidden;
+  width: 100%;
   background-color: #333;
+  padding: 1rem; /* Optional, adjust as needed */
 }
 
 .navbar li {
   cursor: pointer;
+  list-style: none;
+  padding: 0 1rem; /* Add spacing between items */
 }
 
-.nav-link.active {
-  color: #00ff7f; /* Custom highlight color */
-  font-weight: bold;
-  border-bottom: 2px solid #00ff7f;
+.nav-link {
+  transition: color 0.3s;
 }
+
+/* .nav-link.active, .nav-link:hover {
+  color: #00ff7f;
+  font-weight: bold;
+} */
 
 
 .skill-logo {
