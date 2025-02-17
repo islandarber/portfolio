@@ -20,7 +20,8 @@ const Contact = () => {
     emailjs.sendForm(
       process.env.VITE_EMAILJS_SERVICE_ID,
       process.env.VITE_EMAILJS_TEMPLATE_ID,
-      e.target
+      e.target,
+      process.env.VITE_EMAILJS_USER_ID
     )
     .then(() => setStatusMessage('Your message has been sent!'))
     .catch(() => setStatusMessage('Sorry, something went wrong. Please try again.'));
