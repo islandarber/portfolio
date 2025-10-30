@@ -1,11 +1,21 @@
 import techneSwapPhoto from '../assets/projects/techneswap.jpg';
 import notesKitePhoto from '../assets/projects/noteskitephoto.jpg';
 import toDoPhoto from '../assets/projects/getyourStogether.jpg';
+import NasosPhoto from '../assets/projects/nasospic.png';
 import techneVideo from '../assets/projects/techneswapvid.mp4';
 import notesKiteVideo from '../assets/projects/noteskite.mp4';
 import toDoVideo from '../assets/projects/todlist.mp4';
+import NasosVideo from '../assets/projects/nasos.mp4';
 
 export const ProjectList = [ 
+  {
+    title: 'Nasos Portfolio', 
+    description: 'A portfolio website built with React, Node.js, Express, and MongoDB, allowing the user to add and edit projects through an admin panel.',
+    image: NasosPhoto,
+    video: NasosVideo, 
+    gitHublink: {front: 'https://github.com/islandarber/nasospech', back: 'https://github.com/islandarber/nasospechs'}, 
+    liveLink: 'https://nasospech.onrender.com/'
+  },
   {
     title: 'TechneSwap', 
     description: 'A skill-swapping platform built with React, Node.js, Express, and MongoDB, offering seamless skill exchange and filtering.', 
@@ -30,10 +40,11 @@ export const ProjectList = [
     gitHublink: {front: 'https://github.com/islandarber/toDoListCCReact'}
   },
   {
-    title: 'Nasos Portfolio', 
-    description: 'A portfolio website built with React, Node.js, Express, and MongoDB, allowing the user to add and edit projects through an admin panel. This project is still in progress.',
-    image: "https://health.wyo.gov/wp-content/uploads/2023/06/page-under-construction-icon.jpg", 
-    gitHublink: {front: 'https://github.com/islandarber/nasospech', back: 'https://github.com/islandarber/nasospechs'}, 
-    liveLink: 'https://nasospech.onrender.com/'
-  },
+    title: 'Emiliana Tsoukala Website',
+    description: 'A bilingual website for a yoga instructor and drama therapist to present her work and allow users to book sessions or show interest in classes, built with React, TypeScript, and Tailwind CSS. Currently under construction, with a live version available to view the progress so far.',
+    image: "https://repository-images.githubusercontent.com/287795441/46ba8880-df57-11ea-8b79-54878a29a02f",
+    video: null,
+    gitHublink: {front: 'https://github.com/islandarber/emiliana'},
+    liveLink: 'https://emiliana.onrender.com/'
+  }
 ];
